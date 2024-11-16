@@ -1,0 +1,35 @@
+.profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.name {
+    text-align: center;
+}
+.profile_description {
+    text-align: center;
+}
+
+
+.box {
+    width: 400px;
+    /* height: 200px; */
+    display: block;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* 오른쪽으로 2px (양수값이므로 오른쪽)
+    아래로 2px (양수값이므로 아래쪽)
+    블러 효과 4px
+    색상: 검정색(0,0,0)에 투명도 20%(0.2) 적용 */
+    
+}

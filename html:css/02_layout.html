@@ -1,0 +1,30 @@
+<!--
+
+- %는 부모 태그 대비 얼마큼의 공간을 차지할 것인지 정하는 단위
+- <div> 특성
+    display : block; 속성을 갖고 있어서 한 개 div박스는 한 행을 다 차지하려고 한다.
+        그래서 float 같은 값을 써준다.
+        float를 쓰면, div 박스를 '붕 띄워서' 정렬할 수 있다.
+        그런데 '붕 띄워서 정렬' 하다 보니, 다음 div 박스를 정렬할 때는 float를 적용한 div와 위치가 겹치게 된다.
+        이 경우, 새로운 div 박스에 clear : both; 같은 값을 적용하면, float를 적용한 div와 별개로 위치가 배치된다.
+    
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="02_layout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav"></div>
+        <div class="left_box"></div>
+        <div class="right_box"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

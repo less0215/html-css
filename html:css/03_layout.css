@@ -1,0 +1,90 @@
+/* <div class="container">
+<div class="left_box">
+    <div class="top_box">
+        <div class="profile_box">
+            <img src="" alt="">
+            <h4></h4>
+            <p></p>
+        </div>
+    </div>
+    <div class="bottom_box">
+        <h2></h2>
+        <p></p>
+    </div>
+</div>
+
+<div class="right_box">
+    <img src="" alt="">
+</div>
+</div> */
+
+
+.container {
+    width: 800px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.left_box {
+    width: 80%;
+    height: 100%;
+    background-color: gray;
+    float: left;
+}
+
+    .top_box {
+        width: 100%;
+        height: 30%;
+        background-color: beige;
+        margin: 0;
+    }
+
+    .profile_box {
+        width: 20%;
+        height: 100%;
+        background-color: aqua;
+    }
+        .left_image {
+            width: 30%;
+            float: left;
+        }
+
+        .left_content {
+            width: 70%;
+            height: 100%;
+            background-color: brown;
+            float: left;
+        }
+
+            h4 {
+                margin: 8px;
+            }
+
+            p {
+                padding-left: 8px;
+                margin: 8px;
+            }
+
+    .bottom_box {
+        width: 100%;
+        height: 70%;
+        background-color: pink;
+        margin: 0;
+    }
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+
+.right_box {
+    width: 20%;
+    height: 100%;
+    background-color: #999999;
+    float: left;
+}
+

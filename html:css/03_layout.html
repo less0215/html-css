@@ -1,0 +1,44 @@
+<!--
+레이아웃 짤 때 순서
+
+1. 한글로 디브박스 구조부터 짠다
+2. 한글로 짜놓은 디브박스를 코드로 작성한다.
+3. 작성한 html 코드를 바탕삼아 css에도 코드를 작성한다.
+4. css 코드에서도 html 구조를 생각해서 들여쓰기 하면서 작성한다.
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="03_layout.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_box">
+            <div class="top_box">
+                <div class="profile_box">
+                    <img src="lion.png" alt="" class="left_image">
+                    <div class="left_content">
+                        <h4>호랭이</h4>
+                        <p>1시간 전</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_box">
+                <h2 style="padding-left: 8px; padding-top: 8px;">4k 빔프로젝터 가성비 최강으로 선택했어요</h2>
+                <p style="padding-top: 12px; padding-bottom: 12px;" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, error cupiditate. Sequi, eos vitae. Suscipit, corporis expedita temporibus consequatur vero rem assumenda quisquam nulla nam, neque, eveniet culpa quae placeat?</p>
+            </div>
+        </div>
+
+        <div class="right_box">
+            <img src="lion.png" alt="" style="width: 100%; margin-left: auto; margin-right: auto; align-content: center;">
+        </div>
+    </div>
+</body>
+</html>
