@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+.form-background {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding: 20px;
+}
+
+    .form-white {
+        width: 80%;
+        max-width: 600px;
+        height: auto;
+        background-color: aliceblue;
+        margin: auto;
+    }
+
+        .email-box{
+            width: 100%;
+            padding: 16px;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+            .form-input{
+                width: 100%;
+            }
+
+        .w-50{
+            width: 50%;
+            padding: 16px;
+            padding-top: 0;
+            float: left;
+        }
+
+        .w-100 {
+            width: 100%;
+            padding: 16px;
+            padding-top: 0;
+        }
+
+        .form-long {
+            height: 100px;
+        }
+
+    .subscribe {
+        width: 80%;
+        padding: 16px;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+
+    .button {
+        width: 20%;
+        padding: 16px;
+        padding-top: 0;
+        padding-bottom: 10;
+        padding-right: 0;
+        /* float: right; */
+    }
