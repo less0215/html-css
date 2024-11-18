@@ -1,0 +1,11 @@
+
+/* CSS 셀렉터, 자식 안에 있는 걸 손쉽게 스타일링 할 수 있는 문법*/
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none; /* 밑줄 제거 */
+}
+

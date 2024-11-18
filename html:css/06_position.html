@@ -1,0 +1,123 @@
+<!--
+/* CSS 핵심 개념 정리 */
+
+/* 1. 기본 마진 
+- 바디 태그에는 기본 마진(8px)이 있음
+- 보통 아래처럼 초기화해서 사용 */
+body {
+ margin: 0;
+}
+
+/* 2. 마진 상쇄(Margin Collapse) 현상
+- div 박스들이 서로 겹치면 margin이 한꺼번에 적용되는 현상 발생
+- 의도한 대로 margin이 각각 따로 적용되지 않음 */
+
+/* 마진 상쇄 발생하는 경우 */
+.box1 {
+ margin-bottom: 20px;
+}
+.box2 {
+ margin-top: 20px;
+}
+
+/* 마진 상쇄 해결방법
+- 박스 하나에 padding: 1px만 줘도 해결됨
+- padding을 주면 박스들이 겹치지 않게 됨 */
+.box1 {
+ margin-bottom: 20px;
+ padding: 1px;  /* 이렇게만 해도 해결! */
+}
+.box2 {
+ margin-top: 20px;
+}
+
+/* 3. Position 속성 이해하기 */
+
+/* position: relative
+- "내 원래 위치를 기준으로 삼을게요"
+- 요소가 원래 문서 흐름을 유지하면서 이동
+- 다른 요소들에게 영향을 주지 않음 */
+.parent {
+ position: relative;
+ top: 10px;  /* 원래 위치에서 아래로 10px 이동 */
+}
+
+/* position: absolute
+- "position: relative를 가진 가장 가까운 부모를 기준으로 삼을게요"
+- 요소가 공중에 뜬 것처럼 문서 흐름에서 벗어남
+- 다른 요소들은 이 요소가 없는 것처럼 배치됨 */
+.parent {
+ position: relative;  /* 자식의 기준점이 됨 */
+}
+.child {
+ position: absolute;
+ top: 0;    /* 부모 기준으로 위에서 0px 위치 */
+ left: 0;   /* 부모 기준으로 왼쪽에서 0px 위치 */
+}
+
+/* 4. absolute 요소 가운데 정렬하기 (줄다리기 원리) */
+.center-box {
+ position: absolute;
+ left: 0;        /* 왼쪽에서 0만큼 떨어짐 */
+ right: 0;       /* 오른쪽에서 0만큼 떨어짐 */
+ margin: auto;   /* 남은 공간을 자동으로 양쪽으로 균등하게 분배 */
+ width: 200px;   /* 실제 차지할 너비 */
+}
+
+/* 5. CSS 단위 사용법 
+- 값이 0일 때는 단위 생략 가능
+- 다른 모든 값에는 단위 필수 표기 */
+
+/* 0은 단위 생략 가능 */
+margin: 0;
+padding: 0;
+
+/* 0이 아닌 값은 반드시 단위 표기 */
+width: 100px;
+height: 200px;
+margin: 20px;
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="06_position.css">
+</head>
+<body style="margin: 0;">
+    <div class="main_background_img">
+        <div class="main_tite">
+            <h4>
+                Buy Our Shoes!
+            </h4>
+        </div>
+        <div class="main_content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum repellat saepe iusto voluptatibus iure, vitae ratione a quidem ab nisi, illo atque id sint sed asperiores sapiente est debitis.
+            </p>
+        </div>
+        <div class="button">
+            <button>
+                구매하기
+            </button>
+            <button>
+                담아두기
+            </button>
+        </div>
+        </div>
+        <div class="sub_box">
+            <div class="sub_title">
+                <h4 class = "sub_title_h4">How to design our Shoes</h4>
+            </div>
+            <div class="sub_text">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis vero iste similique! Rerum molestias tempora itaque repudiandae dolorem sint commodi fugiat, reiciendis adipisci aperiam et explicabo esse. A, minima tenetur.
+                </p>
+            </div>
+        </div>
+</body>
+</html>

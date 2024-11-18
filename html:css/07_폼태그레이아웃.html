@@ -1,0 +1,68 @@
+<!--
+- % 단위는  '부모 사이즈(가로·세로)의 80%만큼 사이즈를 적용해줘라'라고 하는 것과 같다.
+
+- 맥스 위드스 정해도 콘텐츠가 밖으로 삐져나가는 이유는?
+	위드스는 박스 크기가 아니라, content의 너비를 말하는 것임. 그래서 박스에 패딩 같은 거 주면, 맥스 너비를 초과해 보임.
+		박스 사이즈도 고정시키려면,  '박스사이징 - 보더 박스' 속성 이용해서 패딩과 보더값까지 통제해야 함.
+			팁이 있다면, 'div {}'에 '박스사이징 - 보더 박스', body {}에 마진 0을 적용해 놓고 시작한다.
+
+
+- 브라우저마다 호환성이 다르다. 이 경우 호환성을 모두 잡을 수 있게 도와주는 아래 링크를 link 태그로 삽입한다.
+https://github.com/necolas/normalize.css/blob/master/normalize.css 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="07_폼태그레이아웃.css">
+</head>
+<body>
+    <div class="form_style">
+        <form action="#">
+            
+            <div class="contact_title">
+                contact us
+            </div>
+            
+            <div class="email_style">
+                <div class="email_text">
+                    <h4>Your Email</h4>
+                </div>
+                <div class="input_box">
+                    <input type="email" placeholder="email@example.com" class="input_style">
+                </div>
+            </div>
+
+            <div class="name_style">
+                <div class="name_first_style">
+                    <h4>First name</h4>
+                    <input type="text" class="firstname_style">
+                </div>
+                <div class="last_name_first_style">
+                    <h4>Last name</h4>
+                    <input type="text" class="last_input_style">
+                </div>
+            </div>
+
+            <div class="message_style">
+                <div class="massage_title">
+                    <h4>Message</h4>
+                </div>
+                <textarea rows="8" style="width: 100%; margin-bottom: 20px;"></textarea>
+            </div>
+
+            <div class="send_box">
+                <input type="checkbox">
+                <p>Subscribe</p>
+            </div>
+
+            <button class="btn">SEND</button>
+        </form>
+    </div>
+
+            
+</body>
+</html>

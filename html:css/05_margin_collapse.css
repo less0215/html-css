@@ -1,0 +1,49 @@
+
+/* 두 div 박스에 margin을 각각 따로 줬는데도,
+  박스 테두리가 겹쳐서 margin이 제대로 적용되지 않는 경우입니다 (margin collapse 현상) */
+  /* .box1 {
+    margin-bottom: 20px;
+   }
+   .box2 {
+    margin-top: 20px;
+   } */
+   
+   /* 해결방법: 
+     한 박스에 padding을 주면 테두리가 겹치지 않아서 
+     각각의 margin이 정상적으로 적용됩니다 */
+   /* .box1 {
+    margin-bottom: 20px;
+    padding: 1px;  /* padding 값은 1px만 줘도 충분합니다 */
+   /* } */
+   /* .box2 {
+    margin-top: 20px;
+   }  */
+
+.main_background_img {
+    width: 100%;
+    height: 500px;
+    background-image: url(shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px; /* margin_collapse 현상 해결하기 위한 코드*/ 
+}
+
+.main_tite {
+    font-size: 32px;
+    color: aliceblue;
+    margin-top: 50px;
+}
+
+.main_content {
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 32px;
+}
+
+.button {
+    font-size: 16px;
+    color: aliceblue;
+    margin-top: 32px;
+}
+

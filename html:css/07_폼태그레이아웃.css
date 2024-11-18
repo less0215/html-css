@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+}
+
+    .form_style {
+        width: 400px;
+        height: auto;
+        background-color: #eee;
+        margin: 16px;
+        position: relative;
+    }
+
+
+        .contact_title {
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .email_style {
+            width: 90%;
+            font-size: 16px;
+            padding: 20px;
+            padding-top: 12;
+        }
+            h4 {
+                margin: 0;
+            }
+            
+            .input_box {
+                width: 90%;
+                margin-top: 8px;
+            }
+                .input_style {
+                    width: 100%;
+                    padding: 8px;
+                }
+        
+        .name_style{
+            width: 100%;
+            font-size: 16px;
+            padding: 20px;
+            padding-top: 0;
+            display: block;
+            box-sizing: border-box;
+        }
+            .name_first_style{
+                /* float: left; */
+                width: 45%;
+                /* margin-top: 8px; */
+                padding: 8px;
+                padding-left: 0;
+                display: inline-block;
+            }
+                .firstname_style{
+                    width: 100%;
+                }
+
+            .last_name_first_style {
+                /* float: right; */
+                width: 45%;
+                /* margin-top: 8px; */
+                /* margin-left: 10px; */
+                padding: 8px;
+                padding-left: 0;
+                display: inline-block;
+            }
+                .last_input_style{
+                    width: 100%;
+                }
+        
+        .message_style {
+            width: 90%;
+            font-size: 16px;
+            padding-left: 20px;
+            display: block;
+            box-sizing: border-box;
+        }
+            .massage_title {
+                padding: 8px;
+                padding-left: 0;
+            }
+        
+        .send_box {
+            width: 90%;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            display: block;
+            box-sizing: border-box; 
+        }
+
+        input[type="checkbox"] {
+            vertical-align: middle;
+        }
+
+        p {
+            margin: 0;
+            display: inline-block;
+            font-size: 12px;
+            vertical-align: middle;
+        }
+
+        .btn{
+            position: absolute;
+            bottom: 20px;
+            right: 32px;
+        }
